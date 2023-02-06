@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>album designing by using js</title>
+  <style>
+    /* curly brackets for programing purpose {}*/
+    body{
+      height: 530px;
+      width: 100%;
+    }
+  .album{
+    width:auto;
+    background:radial-gradient(#2193b0,#6dd5ed) ;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+  .album img{
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 6px 0px 50px;
+  }
+.btfamily {
+   display: flex;
+   justify-content: center ;
+   margin-top:-60px;
+}
+button{
+  background-color: #2193b0;       
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: none ;
+  font-size:20px;
+  color:white;
+}
+ button:hover{
+  box-shadow:15px 10px 30px ;
+  background-color: white ;
+  font-size:25px;
+  color:#2193b0;
+  transition:.4s ease-in-out ;
+} 
+i{
+color: tomato;
+}
+
+  </style>
+</head>
+<body>
+  
+<div class="album">
+<img id="printer" src="images/image1.png" >
+</div>
+
+<div class="btfamily">
+
+<button onclick="document.getElementById('printer').src='images/image2.jpg'">+</button>
+
+<button onclick="document.getElementById('printer').src='images/image3.jpg'">+</button>
+
+<button onclick="document.getElementById('printer').src='images/image4.jpg'">+</button>
+
+
+<button onclick="document.getElementById('printer').src='images/image5.jpg'">+</button>
+
+
+<button onclick="document.getElementById('printer').src='images/image6.jpg'">+</button>
+
+
+</div>
+
+<!-- <i class="fa-solid fa-pause"></i> -->
+</body>
+</html>
